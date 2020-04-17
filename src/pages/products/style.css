@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.card img{
+    max-width: 250px;
+}
+
+.card .buy{
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+}
+.card .view{
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+}
