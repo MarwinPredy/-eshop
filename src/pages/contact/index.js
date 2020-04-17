@@ -11,8 +11,8 @@ const ContactPage = () => (
     <h1>Contact</h1>
     <Link to="/">Go back to the homepage</Link>
     <div className="container">
-        <form method="post" netlify-honeypot="bot-field" data-netlify="true">
-    +       <input type="hidden" name="bot-field" />
+        <form method="post" name="contact" netlify-honeypot="bot-field" data-netlify="true">
+           <input type="hidden" name="form-name" value="contact" />
                 <label>
                     Name
                     <input type="text" name="name" id="name" />
