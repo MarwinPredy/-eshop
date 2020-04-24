@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import './style.css'
 
 const ContactPage = () => (
   <Layout>
@@ -11,7 +12,7 @@ const ContactPage = () => (
     <h1>Contact</h1>
     <Link to="/">Go back to the homepage</Link>
     <div className="container">
-        <form method="post" name="contact" netlify-honeypot="bot-field" data-netlify="true">
+        <form action="/success" method="post" name="contact" netlify-honeypot="bot-field" data-netlify="true">
            <input type="hidden" name="form-name" value="contact" />
                 <label>
                     Name

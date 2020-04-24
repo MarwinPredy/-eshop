@@ -9,18 +9,117 @@
 .card{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 50px 0;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    max-width: 400px;
+}
+
+.card-header{
+    background: rgb(195,20,50);
+    background: linear-gradient(90deg, rgba(195,20,50,0.8) 0%, rgba(36,11,54,0.5) 100%);
+    width: 100%;
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card-header h3{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card .breadcumb{
+    border-right: 10px solid rgba(153, 145, 146, 0.3);
+    width: 100%;
+    height: 25px;
+}
+
+.card .breadcumb p{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .card img{
     max-width: 250px;
 }
 
-.card .buy{
-    border: 1px solid #000;
-    border-radius: 0.3rem;
+.price-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.card .view{
-    border: 1px solid #000;
-    border-radius: 0.3rem;
+.price-container span{
+    color: rgba(255, 255, 255, 0.8);
+    margin-right: 15px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price-container .badge{
+    width: 75px;
+    height: 20px;
+    background-color: rgba(195, 20, 50, 0.6);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 7px;
+}
+
+.price-container .badge p{
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.suggested_price{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 10px;
+}
+
+.button_container{
+    display: flex;
+    flex-direction: row;
+    width : 80%;
+    justify-content: space-evenly;
+}
+
+.button_container .button{
+    padding: 1px 5px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #464545;
+    border-color: #464545;
+    cursor: pointer;
+}
+
+.button_container .buy{
+    color: #ffffff;
+    background-color: #00bc8c;
+    border-color: #00bc8c;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1px 5px;
+    font-size: 13px;
+    line-height: 1.5;
 }
