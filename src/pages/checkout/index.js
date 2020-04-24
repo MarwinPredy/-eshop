@@ -1,11 +1,10 @@
 import React from 'react';
 import {loadStrap} from "@stripe/stripe-js"
 
-const API_ENDPOINT = process.env.GATSBY_STRIPE_API;
 
 const Index = () =>{
 
-    const stripePromise = loadStrap(API_ENDPOINT);
+    const stripePromise = loadStrap(process.env.GATSBY_STRIPE_API);
 
     const checkoutButton = async(e)=>{
         e.preventDefault()

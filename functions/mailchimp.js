@@ -1,10 +1,9 @@
 const axios = require("axios");
 require("dotenv").config();
 
-const API_ENDPOINT = process.env.GATSBY_MAILCHIMP_API;
 
 exports.handler = (event, context, callback) =>{
-    const mailchimpApi =API_ENDPOINT;
+    const mailchimpApi = process.env.GATSBY_MAILCHIMP_API;
     const memberListId ="08eea33d75";
 
     const formData = JSON.parse(event.body);
