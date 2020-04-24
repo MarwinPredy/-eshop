@@ -28,8 +28,7 @@ const Index = () =>{
     return(
         <div>
             <form>
-                <input type="email"/>
-                <button conClick={checkoutButton}>
+                <button onClick={checkoutButton}>
                     Payer
                 </button>
             </form>
