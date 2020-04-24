@@ -1,10 +1,10 @@
 const axios = require("axios");
 require("dotenv").config();
 
-const API_ENDPOINT = process.env.GATSBY_API_KEY;
+const API_ENDPOINT = process.env.GATSBY_MAILCHIMP_API;
 
 exports.handler = (event, context, callback) =>{
-    const mailchimpApi ="e8c0b36fd8633473f9ab73fce1c700b4-us8";
+    const mailchimpApi =API_ENDPOINT;
     const memberListId ="08eea33d75";
 
     const formData = JSON.parse(event.body);
@@ -35,7 +35,7 @@ exports.handler = (event, context, callback) =>{
         callback(null, {
             statusCode: err.status,
             body: JSON.stringify({
-                error : err
+                error : err.response.data
             })
         })
     })
