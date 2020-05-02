@@ -2,7 +2,7 @@ exports.createPages = async ({actions, graphql}) =>{
 
     const products = await graphql(`
         query{
-            allMarkdownRemark {filter: {fileAbsolutePath: {regex: "/product/"}}
+            allMarkdownRemark (filter: {fileAbsolutePath: {regex: "/product/"}}){
                 edges {
                   node {
                     frontmatter {
@@ -30,7 +30,7 @@ exports.createPages = async ({actions, graphql}) =>{
 
   const articles = await graphql(`
         query{
-            allMarkdownRemark {filter: {fileAbsolutePath: {regex: "/articles/"}}
+            allMarkdownRemark (filter: {fileAbsolutePath: {regex: "/articles/"}}){
                 edges {
                   node {
                     frontmatter {
@@ -53,6 +53,4 @@ exports.createPages = async ({actions, graphql}) =>{
       }
      
   })
-
-
 }

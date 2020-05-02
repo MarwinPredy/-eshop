@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Le petit campeur`,
+    description: `E-commerce en relation avec le camping`,
+    author: `@MarwinPredy`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,6 +35,12 @@ module.exports = {
         name: `blog`,
         path: `${__dirname}/articles`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `https://keen-sammet-5b32f2.netlify.app/`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
