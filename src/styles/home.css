@@ -8,9 +8,11 @@
 .hero{
     width: 100%;
     height: 650px;
-    background-image: url("../images/hero-cover.jpg") ;
+    background-image: url("../images/hero-cover.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 50px;
 }
 
 .gradient{
@@ -31,6 +33,8 @@
     color: #3a3a3a;
     text-shadow:0 0 4px rgba(0,0,0,0.4);
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    width: 50%;
 }
 
 .gradient a{
@@ -47,10 +51,94 @@
     color: #fff;
     font-family: Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     white-space: normal;
     font-size: 14px;
-    margin-top: 25px;
+    margin-top: 50px;
+}
+
+.feature-row{
+    margin: 100px 0;
+    height: auto;
+    width: 100%;
+}
+
+.feature-row .row{
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+}
+
+.feature-row .row .gradient-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-row .row .gradient-img img{
+    height: 540px;
+    width: 475px;
+}
+
+.feature-row .row .feature-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.feature-row .row .feature-content h3{
+    color: #3a3a3a;
+    font-size: 1.73333em;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: -0.2rem;
+    margin: 0 0 17.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.feature-row .row .feature-content p{
+    color: #333232;
+    margin-bottom: 15px;
+    font-size: 1.13333em;
+    font-family: Helvetica, sans-serif;
+    width: 60%;
+    font-weight: 500;
+}
+.feature-row .row .feature-content a{
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 10px 15px;
+    background-color: #3a3a3a;
+    color: #fff;
+    font-family: Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: normal;
+    font-size: 14px;
+}
+
+.feature-showcase{
+    margin: 50px 0;
+}
+
+.feature-showcase .row{
+    padding: 0 185px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-evenly;
 }
