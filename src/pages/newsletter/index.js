@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './style.css';
 
 const Index = () =>{
 
@@ -20,7 +21,7 @@ const Index = () =>{
     return(
         <div>
             <form onSubmit={submitForm}>
-                <input type="email" value={inputForm.email} name="email" onChange={handleChange}/>
+                <input type="email" value={inputForm.email} name="email" onChange={handleChange} placeholder="Votre email"/>
                 <button type="submit">
                     S'inscrire
                 </button>

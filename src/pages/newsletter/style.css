@@ -1,0 +1,24 @@
+input{
+    border: 1px solid rgba(58, 58, 58, 0.5);
+    padding: 10px 15px;
+    width: 30%;
+}
+button{
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    background-color: #3a3a3a;
+    color: #fff;
+    font-family: Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: normal;
+    font-size: 14px;
+}

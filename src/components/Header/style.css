@@ -5,9 +5,11 @@
     width: 100%;
     position: fixed;
     background-color: #ffffff;
+    z-index: 99999999;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.20)
 }
 .container-fluid{
-    padding: 0 50px;
+    padding: 0 100px;
     height: 100%;
 }
 .row{
@@ -24,21 +26,24 @@
     text-align: center;
 }
 
-.logo-container img{
-    max-height: 4vh;
+.logo-container a{
+    text-decoration: none;
+    color: #000000;
 }
 
-.logo-container p{
+.logo-container a p{
     margin: 0;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .navigation-items{
-    width: 60%;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,23 +51,43 @@
 
 .navigation-items a{
     text-decoration: none;
-    margin: 0 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 30px;
+    font-family:  sans-serif;
     font-size: 15px;
-    font-weight: 400px;
+    font-weight: 800;
     color: rgba(0,0,0,1);
 }
 .utiles{
-    width: 30%;
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.utiles .icone__container{
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #000000;
+    border-radius: 1.5rem;
+    background-color: #efba6c;
 }
-.utiles a{
-    text-decoration: none;
-    margin: 0 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 400px;
-    color: rgba(0,0,0,1);
+.utiles .fa-search{
+    color: #000000;
 }
+.utiles .fa-cart-plus{
+    color: #000000;
+}
+.utiles .icone__container :hover{
+    color: #ffffff;
+}
+
+.btn{
+    color: #000000;
+    background-color: #efba6c;
+    padding: 15px 20px;
+    border-radius: 1.5rem;
+    border: 1px solid #000000;
+}
+

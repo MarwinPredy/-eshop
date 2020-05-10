@@ -3,7 +3,8 @@ import React from "react"
 import "./style.css"
 import IdentityModal, { useIdentityContext } from "react-netlify-identity-widget"
 import "react-netlify-identity-widget/styles.css" // delete if you want to bring your own CSS
-import logo from "../../images/tente-picto.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch, faCartPlus, faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
 
@@ -20,8 +21,7 @@ const Header = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="logo-container">
-            <Link to="/"><img src={logo}></img></Link>
-            <p>Le petit campeur</p>
+            <Link to="/"><p>Le petit campeur</p></Link>
           </div>
           <div className="navigation-items">
             <Link to="/">Home</Link>
@@ -31,8 +31,12 @@ const Header = () => {
             <Link to="/contact/">Contact</Link>
           </div>
           <div className="utiles">
-            <a>Recherche</a>
-            <a>Panier</a>
+            <div className="icone__container">
+              <FontAwesomeIcon icon={faSearch} />
+            </div>
+            <div className="icone__container">
+              <FontAwesomeIcon icon={faCartPlus} />
+            </div>
             <button className="btn" onClick={() => setDialog(true)}>
               {isLoggedIn ? `Hello ${name}, Log out here!` : "LOG IN"}
             </button>
