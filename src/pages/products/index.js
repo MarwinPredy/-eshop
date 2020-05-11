@@ -40,7 +40,7 @@ const ProductPage = ({data}) => (
 
 export const query = graphql`
 query MyQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/product/"}}) {
       edges {
         node {
           frontmatter {

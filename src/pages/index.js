@@ -9,6 +9,7 @@ import Kevlar from "../images/carboneFiber.jpg"
 import Waterproof from "../images/waterproofFabric.jpg"
 import Breath from "../images/respiringFabric.jpg"
 import Showcase from "../components/Showcase/index"
+import Caroussel from "../components/Caroussel/index"
 import '../styles/home.css'
 
 const IndexPage = () => (
@@ -36,12 +37,12 @@ const IndexPage = () => (
       <div className="feature__story">
         <div className="row">
           <div className="story__img">
-            <img src={Portrait}/>
+            <img src={Portrait} data-sal="slide-left" data-sal-delay="500" data-sal-duration="2000" data-sal-easing="ease"/>
           </div>
           <div className="story__content">
               <div className="title__container">
-                <h2>Decouvrer</h2>
-                <h3>Decouvrer</h3>
+                <h2>Decouvrez</h2>
+                <h3>Decouvrez</h3>
                 <span>notre histoire</span>
               </div>
               <div className="text__container">
@@ -55,14 +56,24 @@ const IndexPage = () => (
       </div>
       <div className="feature__showcase">
         <div className="row">
-          <Showcase src={Kevlar} title="Ultra Résistant" content="Nos tissus sont doublés d'un revêtement en carbon pour apporter plus de résitance à nos tissus. Tissus à haute résistance alliant à la fois légereté et resistance, ils sont la pierre angulaire de nos produits et vous garantirons une résistance à toutes épreuves."/>
-          <Showcase src={Breath} title="Imper-Respirant" content="Fabriqué à base de poly-tétra-fluoro-ethylène (PTFE), tous nos tissus sont ensuite retravaillés pour correspondre à la norme  ePTFE. Cela permet nous assurer que nous vous proposons des produits à haute réspirabilité qui pourront s'adapter à tous milieux peux importe le climat dans lequel vous vous trouvez. "/>
-          <Showcase src={Waterproof} title="WaterProof" content="Peu importe les intemperies qui vous attendent tous nos produits sont à l'épreuve de l'eau grâce à la technologie Gore Tex®. Développé en collaboration, nous n'avons cessé d'innover afin de dévelloper nos propres brevets WaterSliding©."/>
+          <div className="title__container">
+            <h2>Levez</h2>
+            <h3>Levez</h3>
+            <span>le voile</span>
+          </div>
+          <div className="showcase__container">
+          <Showcase src={Kevlar} title="Ultra Résistant" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore." button="En Savoir Plus"/>
+          <Showcase src={Breath} title="Imper-Respirant" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore." button="En Savoir Plus"/>
+          <Showcase src={Waterproof} title="WaterProof" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore." button="En Savoir Plus"/>
+          </div>
         </div>
       </div>
       <div className="featured__collections">
         <div className="row">
           <h2>Featured collection</h2>
+          <div className="caroussel__container">
+            <Caroussel/>
+          </div>
         </div>
       </div>
       <div className="hero__medium">
