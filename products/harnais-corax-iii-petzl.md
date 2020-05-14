@@ -10,5 +10,5 @@ description: >-
 
   <!--EndFragment-->
 image: /assets/ph01_1_ak-harnais-corax-iii-petzl.jpg
-path: "HARNAIS CORAX III "
+path: "HARNAIS_CORAX_III "
 ---
