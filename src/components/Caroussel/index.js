@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql } from 'gatsby';
+import { Link } from "gatsby"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -10,7 +11,7 @@ const settings = {
   className: "center",
   infinite: true,
   centerPadding: "60px",
-  slidesToShow: 3,
+  slidesToShow: 5,
   arrows: true,
   speed: 1500,
   easing: "swing",
@@ -22,7 +23,7 @@ const Caroussel = ({data}) =>(
       <Slider {...settings}>
         {
         data.allMarkdownRemark.edges.map((product) => {
-          return <div className="caroussel__card">
+          return <Link className="caroussel__card" to={product.node.frontmatter.path}>
               <div className="image">
                 <img src={product.node.frontmatter.image} alt=""/>
               </div>
@@ -37,7 +38,7 @@ const Caroussel = ({data}) =>(
               <div className="price_container">
                 <span>{product.node.frontmatter.price} €</span>
               </div>
-          </div>
+            </Link>
         })
       }
       </Slider>
