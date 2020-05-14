@@ -10,5 +10,5 @@ description: >-
 
   <!--EndFragment-->
 image: /assets/be10_1-harnais-aero-team-iv-beal.jpg
-path: HARNAIS AERO TEAM IV BEAL
+path: "HARNAIS AERO TEAM IV "
 ---
