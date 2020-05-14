@@ -16,5 +16,5 @@ description: >-
 
   <!--EndFragment-->
 image: /assets/cp63_1-crampons-alpinisme-stalker-universal-ab-monte-j-camp.jpg
-path: CRAMPONS ALPINISME STALKER UNIVERSAL
+path: CRAMPONS_ALPINISME_STALKER_UNIVERSAL
 ---
