@@ -70,7 +70,11 @@ const IndexPage = () => (
       </div>
       <div className="featured__collections">
         <div className="row">
-          <h2>Featured collection</h2>
+          <div className="title__container">
+              <h2>Préparez</h2>
+              <h3>Préparez</h3>
+              <span>votre aventure</span>
+          </div>
           <div className="caroussel__container">
             <Caroussel/>
           </div>

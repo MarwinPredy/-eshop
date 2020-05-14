@@ -270,7 +270,7 @@
 /* Showcase CSS */
 
 .feature__showcase{
-    
+    height: auto;
 }
 
 .feature__showcase .row{
@@ -337,6 +337,56 @@
 .featured__collections{
     height: auto;
     width: 100%;
+    margin: 50px 0;
+}
+
+.featured__collections .row{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.featured__collections .row .title__container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.featured__collections .row .title__container h2{
+    font-size: 5rem;
+    color: #E3E7EA;
+    font-family: fantasy;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.featured__collections .row .title__container h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #000000;
+    width: 150px;
+    height: 1px;
+
+}
+
+.featured__collections .row .title__container h3{
+    position: absolute;
+    top: 95px;
+    color: #efba6c;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: sans-serif
+}
+.featured__collections .row .title__container span{
+    position: absolute;
+    top: 120px;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-family: monospace;
 }
 
 .hero__medium{

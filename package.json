@@ -33,7 +33,9 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
     "react-netlify-identity-widget": "^0.2.7",
-    "react-stripe-elements": "^6.1.2"
+    "react-slick": "^0.26.1",
+    "react-stripe-elements": "^6.1.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "prettier": "2.0.4"

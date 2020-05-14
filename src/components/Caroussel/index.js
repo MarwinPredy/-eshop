@@ -1,26 +1,46 @@
-import React from "react"
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react";
+import { StaticQuery, graphql } from 'gatsby';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import "./style.css"
 
+
+const settings = {
+  className: "center",
+  infinite: true,
+  centerPadding: "60px",
+  slidesToShow: 3,
+  arrows: true,
+  speed: 1500,
+  easing: "swing",
+  swipeToSlide: true,
+};
+
 const Caroussel = ({data}) =>(
-    <div className="container">
+    <div className="card__container">
+      <Slider {...settings}>
         {
         data.allMarkdownRemark.edges.map((product) => {
-          return <div className="card">
-              <div className="card-header"><h3>{product.node.frontmatter.title}</h3></div>
-              <div className="breadcumb"><p>{product.node.frontmatter.description}</p></div>
-              <div className="price-container"><span>{product.node.frontmatter.price} €</span><div className="badge"><p>11% off</p></div></div>
-              <span className="suggested_price">Suggested price : {product.node.frontmatter.price*1.3} €</span>
-              <div className="button_container">
-                <a className="buy">Add to cart</a>
+          return <div className="caroussel__card">
+              <div className="image">
+                <img src={product.node.frontmatter.image} alt=""/>
               </div>
-              <img src={product.node.frontmatter.image} alt=""/>
-              <div className="state_bar">
-                
+              <div className="content">
+                <div className="card__header">
+                  <h4>{product.node.frontmatter.title}</h4>
+                </div>
+                <div className="breadcumb">
+                  <p>{product.node.frontmatter.description}</p>
+                </div>
+              </div>
+              <div className="price_container">
+                <span>{product.node.frontmatter.price} €</span>
               </div>
           </div>
         })
       }
+      </Slider>
     </div>
 )
 
@@ -29,7 +49,7 @@ const Caroussel = ({data}) =>(
       <StaticQuery
         query={graphql`
         query ProductQuerie {
-            allMarkdownRemark {
+            allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/products/"}}) {
               edges {
                 node {
                   frontmatter {
@@ -37,6 +57,7 @@ const Caroussel = ({data}) =>(
                     price
                     description
                     image
+                    path
                   }
                 }
               }
