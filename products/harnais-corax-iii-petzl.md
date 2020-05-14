@@ -9,6 +9,6 @@ description: >-
 
 
   <!--EndFragment-->
-image: /assets/be10_1-harnais-aero-team-iv-beal.jpg
+image: /assets/ph01_1_ak-harnais-corax-iii-petzl.jpg
 path: HARNAIS CORAX III PETZL
 ---
