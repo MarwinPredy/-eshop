@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye, faStream, faRoad, faLink} from '@fortawesome/free-solid-svg-icons'
 import './style.css';
 
-import Layout from "../../components/layout"
+import Layout from "../../components/Layout/index"
 import SEO from "../../components/seo"
 
 const ProductPage = ({data}) => (
