@@ -1,0 +1,206 @@
+.page__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+/* Story CSS */
+
+.feature__story{
+    height: auto;
+    width: 100%;
+    margin: 100px 0;
+}
+
+.feature__story .row{
+    display: flex;
+    flex-direction: row;
+}
+
+.feature__story .row .story__img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.73)),url("../../images/compass.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    
+}
+
+.story__img img{
+    height: 100%;
+    margin-left: 45px;
+}
+
+.feature__story .row .story__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+}
+
+.feature__story .title__container{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feature__story .title__container h2{
+    font-size: 5rem;
+    color: #E3E7EA;
+    font-family: fantasy;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.feature__story .title__container h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #000000;
+    width: 300px;
+    height: 1px;
+    right: -160px;
+    bottom: 0%;
+    transform: rotate(90deg);
+}
+
+.feature__story .title__container h3{
+    position: absolute;
+    top: 95px;
+    right: 10px;
+    color: #efba6c;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: sans-serif
+}
+.feature__story .title__container span{
+    position: absolute;
+    top: 120px;
+    right: 5px;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-family: monospace;
+}
+
+.story__content .text__container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.story__content .text__container p{
+    width: 60%;
+    line-height: 2rem;
+    font-size: 20px;
+    font-family: sans-serif;
+    word-spacing: 0.3rem;
+    text-align: end;
+    padding-right: 20px;
+}
+
+.story__content .button__container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.story__content .button__container a{
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: 20px 25px;
+    background-color: #efba6c;
+    color: #fff;
+    font-family: Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: normal;
+    font-size: 15px;
+    margin-top: 50px;
+    transition: ease-in-out 0.4s;
+}
+
+.story__content .button__container a:hover{
+    background-color: #f19e21;
+}
+
+/* Showcase CSS */
+
+.feature__showcase{
+    height: auto;
+}
+
+.feature__showcase .row{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.feature__showcase .row .title__container{
+    position: relative;
+}
+
+.feature__showcase .row .title__container h2{
+    font-size: 5rem;
+    color: #E3E7EA;
+    font-family: fantasy;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    padding-left: 100px;
+    position: relative;
+}
+
+.feature__showcase .row .title__container h2::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #000000;
+    width: 300px;
+    height: 1px;
+    left: -60px;
+    bottom: -70px;
+    transform: rotate(90deg);
+}
+
+.feature__showcase .row .title__container h3{
+    position: absolute;
+    top: 95px;
+    left: 105px;
+    color: #efba6c;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: sans-serif
+}
+.feature__showcase .row .title__container span{
+    position: absolute;
+    top: 120px;
+    left: 105px;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-family: monospace;
+}
+
+.feature__showcase .row .showcase__container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
