@@ -22,13 +22,13 @@ module.exports = {
         path: `${__dirname}/products`,
       },
     },
-    {
+    /* {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `page`,
         path: `${__dirname}/pages`,
       },
-    },
+    }, */
     {
       resolve: `gatsby-source-filesystem`,
       options: {
